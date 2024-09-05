@@ -27,6 +27,6 @@ class Aluno:
   
   
   
-endereco  = Endereco("rua A", "33")
+endereco  = Endereco("rua Augusta ", "33")
 aluno = Aluno("Matheus","10",endereco)
 print(aluno)
