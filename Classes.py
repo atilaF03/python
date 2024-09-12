@@ -10,7 +10,7 @@ class Endereco:
         self.numero = numero
     
      
-     
+     # tos String versão Python
     def __str__(self) -> str:
             return (f"\nLogradouro{self.logradouro}"
                     f"\nLogradouro {self.numero}")
@@ -26,7 +26,7 @@ class Aluno:
       return (f"nome: {self.nome}\nidade:{self.idade}anos{self.endereco}")
   
   
-  
+  #instanciando o objeto 
 endereco  = Endereco("rua Augusta ", "33")
 aluno = Aluno("Matheus","10",endereco)
 print(aluno)
