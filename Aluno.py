@@ -1,28 +1,20 @@
-from enum import Enum
 
-import os
-os.system("cls||clear")
-
-class Sexo(Enum):
-    MASCULINO = "Masculino"
-    FEMINO = "Feminino"
+from Pessoa import Pessoa
 
 
-class Aluno:
-    def __init__(self, nome : str ,idade: int ,sexo: Sexo) -> None:
-        self.nome = nome
-        self.idade = idade
-        self .sexo = sexo
+class Aluno (Pessoa):   
+   def __init__(self, nome: str, idade: int, email: str,id:str) -> None:
+      super().__init__(nome, idade, email)
+      self.id= id
 
-    def __str__(self) -> str:
-      return (f"\n nome: {self.nome}"
-              f"\n idade: {self.idade}"
-              f"\n Sexo: {self.sexo.value}"
-              
-             )
-    
+   def __str__(self):
+        return(f"\no nome é:{self.nome}"
+               f"\na idade é:{self.idade}"
+               f"\no email é: {self.email}"
+               f"\no id é {self.id}"
+               )
+      
 
-aluno = Aluno("Atila", 12, Sexo.MASCULINO )
+aluno= Aluno("atila ",12,"atila@","123")
+
 print(aluno)
-
-    
